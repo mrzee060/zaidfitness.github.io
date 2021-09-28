@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Register now</title>
+</head>
+<style>
+   body{
+    background-image: url(images/reg.jpg.jpg);
+    color: #460a0c;
+    padding: 0px;
+     margin: 0px;
+
+   }
+ section{
+   background-color: #81634b;
+     width: 35%;
+     margin: 40px auto;
+     border: 5px solid #5c2426;
+     border-radius: 4px;
+     
+ }
+ article div{
+    font-family: 'Raleway', sans-serif;
+padding-bottom: 20px;
+
+ }
+ article label{
+margin-left: 40px;
+color: #460a0c;
+
+ }
+ article input{
+  width: 85%;
+  padding-bottom: 5px;
+  padding-top: 5px; 
+  margin-left: 40px;
+  box-sizing: none ;
+background: #81634b;
+border: none;
+font-size: medium;
+border-bottom: 2px solid rgb(70, 66, 66);
+
+ }
+ .btn{
+     display: block;
+    text-align: center;
+        margin: 8px auto;
+        background-color: #81634b;
+        color: white;
+        padding: 7px 12px;
+        border: 2px solid rgb(70, 66, 66);
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+
+ }
+ .btn:hover{
+ background-color: #5c2426;
+
+ }
+
+</style>
+
+
+<body>
+    <section>
+        <article>
+            <div>
+                <h1>REGISTER</h1>
+            </div>
+
+            <div>
+                <label for="uname">Username <span style=" color: red; font-size : 20px;" >*</span></label>
+                <input type="text" id="uname" placeholder="Enter Username" pattern="[A,Z],[a,z],[0,9]" required>
+
+            </div>
+
+            <div>
+                <label for="pword">Password <span style=" color: red; font-size : 20px;">*</span></label>
+                <input type="password" id="pword" placeholder="Enter Password" pattern="[A,Z],[a,z],[0,9]" required>
+
+            </div>
+
+            <div>
+                <label for="mail">Email</label>
+                <input type="email" id="mail" placeholder="Enter Email" pattern="[a,z],[0,9],@,." required>
+
+            </div>
+
+
+            <div>
+                <span>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" value="Gender" required>
+
+                </span>
+
+                <span>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" value="Gender" required>
+
+                </span>
+
+            </div>
+
+            <div>
+                <label for="sd">Date<span style=" color: red; font-size : 20px;">*</span></label>
+                <input type="date" id="sd" placeholder="Enter Date" required>
+            </div>
+
+
+            <div>
+                <label for="phone">Contact<span style=" color: red; font-size : 20px;">*</span></label>
+                <input type="number" id="phone" placeholder="Enter Contact" pattern="[0,9]" required>
+
+            </div>
+
+            <label for="checkbox"> I herby accept all term and condition </label>
+            <input type="checkbox" id="checkbox">
+
+            <div>
+                <button class="btn">Sign Up</button>
+            </div>
+
+        </article>
+    </section>
+</body>
+
+</html>
